@@ -1,5 +1,6 @@
 // Script to register the Research Orchestrator Agent with Edenlayer Protocol
 
+import 'dotenv/config';
 import { EdenlayerClient } from '../lib/edenlayer/client';
 import { AGENT_BASE_URL } from '../lib/config/edenlayer';
 import type { AgentRegistration } from '../lib/types/edenlayer';
