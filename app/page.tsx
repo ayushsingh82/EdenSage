@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -26,18 +27,20 @@ export default function Home() {
         borderBottom: '1px solid var(--border)',
         zIndex: 100
       }}>
-        <div style={{
+        <Link href="/" style={{
           fontSize: '1.5rem',
           fontWeight: 'bold',
           color: 'var(--orange)',
-          textShadow: '0 0 10px var(--orange-glow)'
+          textShadow: '0 0 10px var(--orange-glow)',
+          textDecoration: 'none'
         }}>
           EDEN
-        </div>
+        </Link>
         <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
-          <a href="#features" style={{ color: 'var(--text)', textDecoration: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--orange)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text)'}>Features</a>
-          <a href="#about" style={{ color: 'var(--text)', textDecoration: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--orange)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text)'}>About</a>
-          <button style={{
+          <Link href="/research" style={{ color: 'var(--text)', textDecoration: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--orange)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text)'}>
+            Research
+          </Link>
+          <Link href="/research" style={{
             padding: '0.75rem 1.5rem',
             background: 'transparent',
             border: '1px solid var(--orange)',
@@ -45,7 +48,9 @@ export default function Home() {
             borderRadius: '4px',
             fontSize: '0.9rem',
             transition: 'all 0.3s',
-            boxShadow: '0 0 10px var(--orange-glow)'
+            boxShadow: '0 0 10px var(--orange-glow)',
+            textDecoration: 'none',
+            display: 'inline-block'
           }} onMouseEnter={(e) => {
             e.currentTarget.style.background = 'var(--orange)';
             e.currentTarget.style.color = 'var(--bg)';
@@ -55,8 +60,8 @@ export default function Home() {
             e.currentTarget.style.color = 'var(--orange)';
             e.currentTarget.style.boxShadow = '0 0 10px var(--orange-glow)';
           }}>
-            Get Started
-          </button>
+            Try It Now
+          </Link>
         </div>
       </nav>
 
@@ -152,7 +157,7 @@ export default function Home() {
             opacity: isLoaded ? 1 : 0,
             transition: 'opacity 0.8s ease-in 0.6s'
           }}>
-            <button style={{
+            <Link href="/research" style={{
               padding: '1rem 2.5rem',
               background: 'var(--gradient-fire)',
               border: 'none',
@@ -164,7 +169,9 @@ export default function Home() {
               transition: 'all 0.3s',
               boxShadow: 'var(--glow-orange)',
               position: 'relative',
-              overflow: 'hidden'
+              overflow: 'hidden',
+              textDecoration: 'none',
+              display: 'inline-block'
             }} onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'scale(1.05)';
               e.currentTarget.style.boxShadow = '0 0 30px var(--orange-glow), 0 0 60px rgba(255, 102, 0, 0.3)';
@@ -172,10 +179,10 @@ export default function Home() {
               e.currentTarget.style.transform = 'scale(1)';
               e.currentTarget.style.boxShadow = 'var(--glow-orange)';
             }}>
-              Start Building
-            </button>
+              Start Research
+            </Link>
             
-            <button style={{
+            <Link href="/research" style={{
               padding: '1rem 2.5rem',
               background: 'transparent',
               border: '1px solid var(--orange)',
@@ -185,7 +192,9 @@ export default function Home() {
               fontWeight: 'bold',
               cursor: 'pointer',
               transition: 'all 0.3s',
-              boxShadow: '0 0 10px var(--orange-glow)'
+              boxShadow: '0 0 10px var(--orange-glow)',
+              textDecoration: 'none',
+              display: 'inline-block'
             }} onMouseEnter={(e) => {
               e.currentTarget.style.background = 'var(--orange)';
               e.currentTarget.style.color = 'var(--bg)';
@@ -195,8 +204,8 @@ export default function Home() {
               e.currentTarget.style.color = 'var(--orange)';
               e.currentTarget.style.boxShadow = '0 0 10px var(--orange-glow)';
             }}>
-              Watch Demo
-            </button>
+              Try It Now
+            </Link>
           </div>
         </div>
 
