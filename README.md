@@ -1,6 +1,6 @@
-# Research Orchestrator Agent
+# EdenSage
 
-A sophisticated multi-agent system built on the Edenlayer Protocol that coordinates specialized agents to conduct comprehensive research, analyze data, generate summaries, and format citations.
+A sophisticated multi-agent research system built on the Edenlayer Protocol that coordinates specialized agents to conduct comprehensive research, analyze data, generate summaries, and format citations.
 
 ## 🎯 Overview
 

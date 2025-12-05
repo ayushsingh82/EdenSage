@@ -114,7 +114,7 @@ export default function ResearchPage() {
           textShadow: '0 0 10px var(--orange-glow)',
           textDecoration: 'none'
         }}>
-          EDEN
+          EdenSage
         </Link>
         <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
           <Link href="/" style={{ color: 'var(--text)', textDecoration: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--orange)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text)'}>
@@ -713,9 +713,16 @@ export default function ResearchPage() {
         )}
       </div>
 
-      <style jsx>{`
+      <style jsx global>{`
         @keyframes spin {
           to { transform: rotate(360deg); }
+        }
+        
+        input:focus,
+        select:focus,
+        textarea:focus {
+          outline: none !important;
+          border-color: var(--orange) !important;
         }
       `}</style>
     </div>

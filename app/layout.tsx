@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Eden AI Agent",
-  description: "Next-generation AI agent platform with advanced capabilities",
+  title: "EdenSage - AI Research Orchestrator",
+  description: "EdenSage is a sophisticated multi-agent research system built on the Edenlayer Protocol, coordinating specialized AI agents to conduct comprehensive research, analyze data, and generate reports.",
 };
 
 export default function RootLayout({

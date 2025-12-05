@@ -34,7 +34,7 @@ export default function Home() {
           textShadow: '0 0 10px var(--orange-glow)',
           textDecoration: 'none'
         }}>
-          EDEN
+          EdenSage
         </Link>
         <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
           <Link href="/research" style={{ color: 'var(--text)', textDecoration: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--orange)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text)'}>
@@ -115,7 +115,7 @@ export default function Home() {
             textTransform: 'uppercase',
             letterSpacing: '3px'
           }}>
-            AI-Powered Intelligence
+            AI-Powered Research
           </div>
           
           <h1 style={{
@@ -131,9 +131,9 @@ export default function Home() {
             lineHeight: 1.1,
             textShadow: '0 0 30px var(--orange-glow)'
           }}>
-            Your Next-Gen
+            EdenSage
             <br />
-            AI Agent
+            Research Orchestrator
           </h1>
 
           <p style={{
@@ -146,7 +146,7 @@ export default function Home() {
             transition: 'opacity 0.8s ease-in 0.4s',
             lineHeight: 1.6
           }}>
-            Experience the future of artificial intelligence with an agent that understands, learns, and adapts to your needs in real-time.
+            Coordinate multiple AI agents to conduct comprehensive research, analyze data, and generate detailed reports with citations.
           </p>
 
           <div style={{
@@ -395,9 +395,9 @@ export default function Home() {
           marginBottom: '1rem',
           textShadow: '0 0 10px var(--orange-glow)'
         }}>
-          EDEN
+          EdenSage
         </div>
-        <p style={{ marginBottom: '1rem' }}>© 2024 Eden AI Agent. All rights reserved.</p>
+        <p style={{ marginBottom: '1rem' }}>© 2024 EdenSage. All rights reserved.</p>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
           <a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--orange)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-muted)'}>Privacy</a>
           <a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--orange)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-muted)'}>Terms</a>
